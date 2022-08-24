@@ -1,0 +1,144 @@
+.maindiv{
+    width: 30%;
+    height: 20vh;
+    margin: auto;
+    margin-top: 40px;
+    background-color: "white";
+    box-shadow: 1px -1px 2px 2px black;
+    padding: 5px 9px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color:blue;
+}
+
+.maindiv button{
+background-color:blueviolet;
+border-radius: 5px;
+box-shadow: .5px .5px .5px .5px black;
+padding: 8px 5px;
+color: aliceblue;
+cursor:pointer;
+}
+.maindiv button:hover{
+    background-color: whitesmoke;
+    color:blue;
+}
+
+.maindiv input{
+width: 85%; 
+border-radius: 5px;  
+border:none;
+box-shadow: 1px 1px 1px 1px black;
+padding:10px 5px;
+}
+.ulist{
+    width: 40%;
+    margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    padding: 8px 5px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px blue;
+}
+
+@media (max-width: 319px)  {
+    .maindiv {
+        flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           width: auto;
+           margin: 5rem;
+    }
+    .maindiv button{
+        width: 89%;
+        margin-top: .6rem;
+    }
+    .ulist{
+        width: auto;
+        margin: 5rem;
+        
+    }
+}
+
+ /* Media Query for Mobile Devices */
+ @media (min-width: 320px) and (max-width: 480px) {
+    .maindiv {
+        flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           width: auto;
+           margin: 5rem;
+    }
+    .maindiv button{
+        width: 89%;
+        margin-top: .6rem;
+    }
+    .ulist{
+        width: 60%;
+        
+    }
+}
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+        .maindiv {
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           width: auto;
+           margin: 5rem;
+        }
+        .maindiv button{
+            width: 89%;
+            margin-top: .6rem;
+        }
+        .ulist{
+       
+            max-width: 70%;
+        }
+    }
+
+     
+     @media (min-width: 768px) and (max-width: 1024px){
+        .maindiv {
+            padding: .5rem 2rem;
+            width: 50%;
+         }
+        .maindiv button{
+           margin-left: 1rem;
+        }
+        .ulist{
+            max-width: 50%;
+           }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1200px){
+        .maindiv {
+            padding: .5rem 2rem;
+         }
+        .maindiv button{
+           margin-left: 1rem;
+        }
+     
+    }
+
+    @media (min-width: 1201px){
+        .maindiv {
+            width: 60%;
+           padding: .5rem 2rem;
+         }
+        .maindiv button{
+         width: 13%;
+         margin-left: 1rem;
+        }
+        .maindiv input{
+          width:85%;
+            }
+       
+    }
